@@ -1,0 +1,620 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: rgb(228, 227, 227);
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sekil{
+    align-items: center;
+    justify-content: space-between; 
+    display: flex;
+    margin-bottom: 10px;
+    color: rgb(82, 79, 79);
+}
+
+.sekil ul{
+    
+    display: flex;
+    list-style-type:none ;
+}
+.sekil ul li{
+    padding: 8px;
+}
+
+.sekil a{
+    color: rgb(82, 79, 79);
+}
+
+.sekil ul li i{
+    font-size: 20px;
+}
+
+.sekil ul li i:hover{
+    animation: sosyal 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sosyal {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+.container{
+    
+    border-radius: 10px;
+    height: 1550px;
+    background-color: white;
+    box-shadow: 3px 3px 8px #000;
+}
+
+.header{
+    max-width: 100%; 
+    height: 250px;
+    background-color: rgb(174, 184, 159);
+    border-radius: 10px;
+}
+
+
+   
+
+.header h2{
+    font-size: 40px;
+    color: rgb(243, 231, 231);
+    text-align: center;
+    padding-top:50px ;
+}
+
+.header p{
+    font-size: 18px;
+    color: rgb(243, 231, 231);
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 25px;
+}
+
+.header .btn{
+    text-decoration: none;
+    color: black;
+    margin-left: 572px;
+    padding: 12px;
+    background-color:rgb(243, 231, 231);
+    border:1px solid black;
+}
+
+.header .btn:hover{
+    opacity: 0.7;
+}
+
+.header .profil img{
+
+    position: absolute;
+    box-shadow: 4px 4px 5px ;
+    margin-left: 60px;
+    height: 200px;
+    width: 280px;
+    margin-top:60px;
+}
+
+.header .profil img:hover{
+    animation: profil 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes profil {
+    0% {
+        margin-top: 60px;
+    }
+    100% {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:800px){
+    
+.header h2{
+    padding-top: 60px;
+    font-size: 30px;
+    margin-left: 320px;
+}
+
+.header p{
+    font-size: 16px;
+    margin-left: 320px;
+}
+
+.header .btn{
+    margin-left: 390px;    
+}
+
+.header .profil img{
+    height: 200px;
+    width: 260px;
+}
+}
+
+
+@media (max-width:600px){
+    
+    .header h2{
+        padding-top: 0px;
+        font-size: 24px;
+        margin-left: 0px;
+    }
+    
+    .header p{
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    
+    .header .btn{
+        margin-left: 140px;
+         padding: 7px;
+    }
+    
+    .header .profil img{
+        margin-left: 70px;
+        margin-top: 110px;
+        height: 170px;
+        width: 230px;
+    }
+    .header .profil img:hover{
+        animation: profil 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes profil {
+        0% {
+            margin-top: 110px;
+        }
+        100% {
+            margin-top: 105px;
+        }
+    }
+
+    }
+    
+
+.about{
+    margin: 20px;
+    margin-top:40px ;
+    width: 60%;
+    float: left;
+}
+
+
+.tablo{
+    
+    margin: 20px;
+    margin-top: 80px;
+    width: 32%;
+    float: right;
+}
+
+.tablo .sol{
+   font-weight: bold;
+}
+
+.tablo .sag{
+    padding-left: 90px;
+
+}
+
+@media (max-width:800px){
+    .about{
+        width: 500px;
+    }
+    
+    .tablo{
+        margin: auto;
+        float: left;
+        width: 800px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+}
+
+
+@media (max-width:600px){
+    .about{
+        width: 365px;
+    }
+    
+    .tablo{
+        margin: auto;
+        float: left;
+        width: 800px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+}
+
+.hr1{
+    
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+
+.yeteneklersol{
+    margin-left: 20px;
+    margin-right: 55px;
+width: 45%;
+float: left;
+margin-bottom: 10px;
+}
+
+.yeteneklersag{
+   
+    margin-top: 35px;
+    width: 45%;
+    float: left;
+    }
+
+    
+.yeteneklersag2{
+    margin-left: 7px;
+    width: 45%;
+    float: left;
+    margin-bottom: 10px;
+    }
+
+    @media (max-width:800px){
+        .hr1{
+            margin-bottom:20px ;
+            width: 100%;
+        }
+
+        .yeteneklersag{
+            margin:auto;
+          margin-left: 14px;
+        }
+
+        .yeteneklersag2{
+            
+            margin-left: 25px;
+     }
+     .yeteneklersol p{
+        margin-left: 10px;
+     }
+
+     .yeteneklersag p{
+       margin-left: 18px;
+     }
+
+     .yeteneklersag2 p{
+         margin-left: 9px;
+  }
+
+    }
+
+    @media (max-width:600px){
+        .hr1{
+            margin-bottom:20px ;
+            width: 100%;
+        }
+
+        .yeteneklersag{
+            margin:auto;
+          margin-left: 14px;
+          
+        }
+
+        .yeteneklersag img{
+         width: 350px;
+         height: 30px;
+          
+        }
+
+        .yeteneklersag2 img{
+            width: 350px;
+            height: 30px;
+             
+           }
+
+           .yeteneklersol img{
+            width: 340px;
+            height: 30px;
+             
+           }
+
+        .yeteneklersag2{
+            
+            margin-left: 25px;
+     }
+     .yeteneklersol p{
+        margin-left: 5px;
+     }
+
+     .yeteneklersag p{
+       margin-left: 10px;
+     }
+
+     .yeteneklersag2 p{
+         margin-left: 3px;
+  }
+
+    }
+
+h2{
+    margin-top: 10px;
+}
+
+
+
+.table2{
+    float: left;
+    margin-left: 20px;
+     width: 850px;
+     text-align: justify;
+}
+
+.table2 .egitim{
+    font-size: 20px;
+}
+
+.table2 .deneyim{
+    font-size: 20px;
+}
+
+.table2 i{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.hayat h2{
+    clear: both;
+    
+    margin: 25px;
+}
+
+@media  (max-width:800px){
+    .table2{
+        float: left;
+         width: 550px;
+    }
+    .table3{
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .hr2{
+        width: 100%;
+    }
+    .table3 .bas{
+       padding-top: 10px;
+    }
+    .table2 .deneyim{
+        display: flex;
+        padding-right: 5px;
+    }
+}
+
+@media  (max-width:600px){
+    .table2{
+        text-align: left;
+         width: 360px;
+    }
+    .table3{
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .hr2{
+        width: 100%;
+    }
+    .table3 .bas{
+       padding-top: 10px;
+    }
+    .table2 .deneyim{
+        display: flex;
+        padding-right: 5px;
+    }
+}
+
+
+.hr2{
+    
+    margin-top: 350px;
+    margin-bottom: 20px;
+}
+
+.iletisim{
+    margin-top: 10px;
+    margin: 20px;
+   
+}
+
+
+.iletisim h2{
+    margin-bottom:10px;
+}
+
+
+.iletisim td{
+    padding: 2px;
+    
+}
+
+input {
+  
+    padding:8px 20px;
+    border: 1px solid #eee;
+    border-left: 3px solid;
+    border-left-color: rgb(174, 184, 159); 
+    border-radius: 5px;
+    transition: border-color .8s ease-out;
+  }
+  
+  input:focus{
+    outline:none;
+    border: 1px solid #eee;
+    border-left: 3px solid #888;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #eee;
+    border-left: 3px solid;
+    border-left-color: rgb(174, 184, 159); 
+    border-radius: 5px;
+    transition: border-color .8s ease-out;
+    resize: none;
+}
+
+input[type=submit]{
+    width: 120px;
+    height: 40px;
+    padding:8px 20px;
+    border: 1px solid #eee;
+    border-left: 3px solid;
+    border-left-color: rgb(174, 184, 159); 
+    border-radius: 5px;
+    transition: border-color .8s ease-out;
+}
+
+input:focus[type=submit]{
+    outline:none;
+    border: 1px solid #eee;
+    border-left: 3px solid #888;
+  }
+
+  .iletisim iframe{
+     margin-right: 25px;
+      float: right;
+  }
+
+  .sekil2{
+      font-size: 20px;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top:40px ;
+    text-align:center;
+    color: rgb(82, 79, 79);
+}
+
+.sekil2 ul{
+    margin-left: 550px;
+    display: flex;
+    list-style-type:none ;
+}
+.sekil2 ul li{
+    padding: 8px;
+}
+
+.sekil2 a{
+    color: rgb(82, 79, 79);
+}
+
+.sekil2 ul li i{
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.sekil2 ul li i:hover{
+    animation: sosyal 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sosyal {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .table3{
+      float: left;
+  }
+
+  .table3 .bas{
+    font-size: 20px;
+}
+
+
+.table3 i{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.table3 img{
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+@media  (max-width:800px){
+   .container{
+       height: 2200px;
+   }
+   .sekil2 ul{
+    margin-left: 205px;
+   }
+   .iletisim iframe{
+       width: 530px;
+       padding-left: 10px;
+ }
+    .iletisim{
+    margin: auto;
+   padding: auto;
+}
+
+@media  (max-width:600px){
+    .container{
+        height: 2200px;
+    }
+    .sekil2 ul{
+     margin-left: 115px;
+    }
+    .iletisim iframe{
+        width: 350px;
+        padding-left: 10px;
+  }
+     .iletisim{
+     margin: auto;
+    padding: auto;
+ }
+
+input {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .iletisim h2{
+      margin-bottom: 30px;
+    
+    margin-left: 30px;
+}
+}
+
+}
+
